@@ -1,0 +1,167 @@
+{
+  "title": "Oleksandr Boichenko - Full-stack Developer",
+  "name": {
+    "first": "OLEKSANDR",
+    "last": "BOICHENKO",
+    "title": "Full-stack Node/React.ts Developer"
+  },
+  "summary": {
+    "title": "SUMMARY",
+    "text": "Experienced Full-stack Developer with {{years}} years of professional experience in building scalable web applications using Node.js, React, and TypeScript. Proficient in both front-end and back-end development, with expertise in RESTful APIs, database design, and modern development frameworks. Strong problem-solving skills and a passion for creating efficient, maintainable code that delivers exceptional user experiences."
+  },
+  "workExperience": {
+    "title": "WORK EXPERIENCE",
+    "job0": {
+      "title": "Full-stack Developer",
+      "company": "Clockwise Software",
+      "date": "Mar 2022 - Present"
+    },
+    "job1": {
+      "title": "Engineer",
+      "company": "PKB PSK",
+      "date": "2020 - Mar 2022"
+    },
+    "job2": {
+      "title": "Specialist",
+      "company": "Department of Capital Construction DOGA",
+      "date": "2017 - 2020"
+    },
+    "job3": {
+      "title": "PTO Department Engineer",
+      "company": "Construction company Sozidatel",
+      "date": "2015 - 2016"
+    },
+    "job4": {
+      "title": "Design Engineer",
+      "company": "Ukrevrokrovlya",
+      "date": "2013 - 2015"
+    }
+  },
+  "experience": {
+    "title": "PROJECT EXPERIENCE",
+    "role": "Full-stack Developer",
+    "roleFrontend": "Front-end Developer",
+    "tech": "Tech:",
+    "tattoo": {
+      "name": "Tattoo Studio Platform",
+      "date": "2024 - Present",
+      "tech": "NestJS, Prisma, GraphQL, Next.js 15, TypeScript, Apollo Client, Tailwind CSS, shadcn/ui, PostgreSQL, Docker, GitHub Actions, CI/CD, DigitalOcean",
+      "description": "Full-stack platform for tattoo studio management with client booking, portfolio management, and artist scheduling. Built with modern GraphQL architecture, featuring responsive design and comprehensive admin functionality. Includes separate backend (NestJS) and frontend (Next.js) repositories with Docker containerization, CI/CD pipelines, and deployed on DigitalOcean.",
+      "items": [
+        "Developed GraphQL API with NestJS and Prisma ORM",
+        "Built responsive frontend with Next.js 15 and Tailwind CSS",
+        "Implemented Docker containerization for deployment",
+        "Configured CI/CD pipelines with GitHub Actions",
+        "Created admin panel with shadcn/ui components",
+        "Implemented authentication and authorization systems"
+      ]
+    },
+    "matchio": {
+      "name": "Matchio",
+      "date": "Oct 2023 - Present",
+      "description": "Large SaaS platform for automating program selection processes. The service allows flexible configuration of conditions for candidates and hosts, with automatic matching based on custom algorithms. Includes a designer for creating forms, tables, and setting up approval sequences for documents and files.",
+      "items": [
+        "Implementation of core functionality and features",
+        "Code maintenance and optimization",
+        "Program setup and configuration"
+      ]
+    },
+    "intraveler": {
+      "name": "Intraveler",
+      "date": "Jul 2023 - Oct 2023",
+      "description": "International travel and volunteer platform for young people. Helps users find, book and manage trips that combine adventure, cultural exchange and work on social and environmental projects.",
+      "items": [
+        "Communication with customers and development team",
+        "Developed and maintained multiple admin panels for content, users, and bookings management",
+        "Integrated Stripe payment system for online transactions",
+        "Designed and implemented RESTful API for stable data exchange"
+      ]
+    },
+    "remoteworx": {
+      "name": "RemoteWorx",
+      "date": "Oct 2022 - May 2023",
+      "description": "Remote work platform designed to support employee well-being. Promotes healthy habits like proper nutrition and exercise, featuring a gamified module to help users enhance their remote workspace.",
+      "items": [
+        "Created and implemented user interface components",
+        "Collaborated closely with designers and back-end developers",
+        "Developed adaptive game to attract employees to the site",
+        "Built in-game store and refined game mechanics to increase engagement"
+      ]
+    },
+    "cwhub": {
+      "name": "CW Hub",
+      "date": "Jun 2022 - Dec 2023",
+      "description": "Full-stack web application for managing employees' working hours, weekends, public holidays, and vacations, including a calendar interface and leave request system.",
+      "items": [
+        "Full-stack development (front-end & back-end)",
+        "Implemented calendar for tracking working days, weekends, and holidays",
+        "Built functionality for vacation planning, requests, and approvals",
+        "Developed logic for time tracking and reporting"
+      ]
+    },
+    "intern": {
+      "name": "Intern Project",
+      "date": "Mar 2022 - Jun 2023",
+      "description": "Web application that allowed users to request watch repair services by booking available masters, taking into account their workload and schedules.",
+      "items": [
+        "Developed web application from scratch",
+        "Ensured correct functionality and responsive UI across devices",
+        "Set up build and deployment process and published the site"
+      ]
+    }
+  },
+  "education": {
+    "title": "EDUCATION",
+    "degree": "Specialist Degree in Civil Engineering",
+    "school": "Prydniprovska State Academy of Civil Engineering and Architecture",
+    "location": "Dnipro, Ukraine | 2009 – 2014",
+    "details": "Specialized in Civil Engineering with focus on structural design, construction management, and architectural planning. Completed comprehensive coursework in engineering principles, mathematics, and project management."
+  },
+  "skills": {
+    "technical": {
+      "title": "TECHNICAL SKILLS",
+      "frontend": "FRONT-END",
+      "backend": "BACK-END",
+      "databases": "DATABASES",
+      "devops": "DEVOPS"
+    },
+    "technologies": {
+      "title": "TECHNOLOGIES",
+      "frontend": "Front-end:",
+      "frontendList": "React, React Router, Redux Toolkit, Material UI, Styled Components, Tailwind CSS, Formik, React Hook Form, HTML5, CSS3",
+      "backend": "Back-end:",
+      "backendList": "Node.js, NestJS, Express.js, GraphQL (Apollo), REST API",
+      "orm": "ORM:",
+      "ormList": "Sequelize, Prisma, TypeORM",
+      "databases": "Databases:",
+      "databasesList": "PostgreSQL, MySQL, MongoDB, Redis, S3",
+      "tools": "Tools:",
+      "toolsList": "Git, GitHub, Docker, GitHub Actions, CI/CD, Postman, Swagger, Webpack",
+      "languages": "Languages:",
+      "languagesList": "TypeScript, JavaScript (ES6+)",
+      "auth": "Auth & Payments:",
+      "authList": "JWT, OAuth, Stripe, PayPal"
+    }
+  },
+  "languages": {
+    "title": "LANGUAGES",
+    "english": "English",
+    "ukrainian": "Ukrainian",
+    "level": {
+      "a2b1": "A2-B1",
+      "native": "Native"
+    }
+  },
+  "contacts": {
+    "title": "CONTACTS",
+    "phone": "Phone:",
+    "email": "Email:",
+    "github": "GitHub:",
+    "linkedin": "LinkedIn:"
+  },
+  "footer": {
+    "email": "19mip92@gmail.com",
+    "github": "@mip92",
+    "linkedin": "LinkedIn"
+  }
+}

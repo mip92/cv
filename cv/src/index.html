@@ -12,10 +12,16 @@
       <!-- Header Section -->
       <section class="header-section" id="header">
         <div class="header-container">
+          <div class="lang-switcher">
+            <button class="lang-btn" data-lang="uk">UA</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+          </div>
           <div class="header-name">
-            <h1 class="name-first">OLEKSANDR</h1>
-            <h1 class="name-last">BOICHENKO</h1>
-            <p class="name-title">Full-stack Node/React.ts Developer</p>
+            <h1 class="name-first" data-i18n="name.first">OLEKSANDR</h1>
+            <h1 class="name-last" data-i18n="name.last">BOICHENKO</h1>
+            <p class="name-title" data-i18n="name.title">
+              Full-stack Node/React.ts Developer
+            </p>
           </div>
           <div class="header-photo">
             <div class="photo-circle">
@@ -36,8 +42,8 @@
           <div class="content-column left-column">
             <!-- Summary -->
             <div class="content-box">
-              <h2 class="box-title">SUMMARY</h2>
-              <p class="box-text">
+              <h2 class="box-title" data-i18n="summary.title">SUMMARY</h2>
+              <p class="box-text" data-i18n="summary.text">
                 Experienced Full-stack Developer with 3+ years of professional
                 experience in building scalable web applications using Node.js,
                 React, and TypeScript. Proficient in both front-end and back-end
@@ -50,7 +56,9 @@
 
             <!-- Project Experience -->
             <div class="content-box">
-              <h2 class="box-title">PROJECT EXPERIENCE</h2>
+              <h2 class="box-title" data-i18n="experience.title">
+                PROJECT EXPERIENCE
+              </h2>
 
               <div class="experience-item">
                 <div class="experience-header">
@@ -60,16 +68,26 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       class="project-link"
+                      data-i18n="experience.matchio.name"
                       >Matchio</a
                     >
                   </h3>
-                  <span class="experience-date">Oct 2023 - Present</span>
+                  <span
+                    class="experience-date"
+                    data-i18n="experience.matchio.date"
+                    data-start-date="2023-10-01"
+                    data-end-date="present"
+                    >Oct 2023 - Present</span
+                  >
                 </div>
-                <p class="experience-role">Full-stack Developer</p>
-                <p class="experience-tech">
-                  <strong>Tech:</strong> NestJS, Sequelize, React, Redux, Formik
+                <p class="experience-role" data-i18n="experience.role">
+                  Full-stack Developer
                 </p>
-                <p class="box-text">
+                <p class="experience-tech">
+                  <strong data-i18n="experience.tech">Tech:</strong> NestJS,
+                  Sequelize, React, Redux, Formik
+                </p>
+                <p class="box-text" data-i18n="experience.matchio.description">
                   Large SaaS platform for automating program selection
                   processes. The service allows flexible configuration of
                   conditions for candidates and hosts, with automatic matching
@@ -78,9 +96,77 @@
                   and files.
                 </p>
                 <ul class="experience-list">
-                  <li>Implementation of core functionality and features</li>
-                  <li>Code maintenance and optimization</li>
-                  <li>Program setup and configuration</li>
+                  <li data-i18n="experience.matchio.items.0">
+                    Implementation of core functionality and features
+                  </li>
+                  <li data-i18n="experience.matchio.items.1">
+                    Code maintenance and optimization
+                  </li>
+                  <li data-i18n="experience.matchio.items.2">
+                    Program setup and configuration
+                  </li>
+                </ul>
+              </div>
+
+              <div class="experience-item">
+                <div class="experience-header">
+                  <h3 class="experience-job">
+                    <a
+                      href="https://github.com/mip92/tattoo"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="project-link"
+                      data-i18n="experience.tattoo.name"
+                      >Tattoo Studio Platform</a
+                    >
+                  </h3>
+                  <span
+                    class="experience-date"
+                    data-i18n="experience.tattoo.date"
+                    data-start-date="2025-06-01"
+                    data-end-date="present"
+                    >Jun 2025 - Present</span
+                  >
+                </div>
+                <p class="experience-role" data-i18n="experience.role">
+                  Full-stack Developer
+                </p>
+                <p class="experience-tech">
+                  <strong data-i18n="experience.tech">Tech:</strong>
+                  <span data-i18n="experience.tattoo.tech"
+                    >NestJS, Prisma, GraphQL, Next.js 15, TypeScript, Apollo
+                    Client, Tailwind CSS, shadcn/ui, PostgreSQL, Docker, GitHub
+                    Actions, CI/CD, DigitalOcean</span
+                  >
+                </p>
+                <p class="box-text" data-i18n="experience.tattoo.description">
+                  Full-stack platform for tattoo studio management with client
+                  booking, portfolio management, and artist scheduling. Built
+                  with modern GraphQL architecture, featuring responsive design
+                  and comprehensive admin functionality. Includes separate
+                  backend (NestJS) and frontend (Next.js) repositories with
+                  Docker containerization, CI/CD pipelines, and deployed on
+                  DigitalOcean.
+                </p>
+                <ul class="experience-list">
+                  <li data-i18n="experience.tattoo.items.0">
+                    Developed GraphQL API with NestJS and Prisma ORM
+                  </li>
+                  <li data-i18n="experience.tattoo.items.1">
+                    Built responsive frontend with Next.js 15 and Tailwind CSS
+                  </li>
+                  <li data-i18n="experience.tattoo.items.2">
+                    Implemented Docker containerization for deployment
+                  </li>
+                  <li data-i18n="experience.tattoo.items.3">
+                    Configured CI/CD pipelines with GitHub Actions
+                  </li>
+                  <li data-i18n="experience.tattoo.items.4">
+                    Created admin panel with shadcn/ui components
+                  </li>
+                  <li data-i18n="experience.tattoo.items.5">
+                    Implemented authentication and authorization systems
+                  </li>
                 </ul>
               </div>
 
@@ -92,31 +178,46 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       class="project-link"
+                      data-i18n="experience.intraveler.name"
                       >Intraveler</a
                     >
                   </h3>
-                  <span class="experience-date">Jul 2023 - Oct 2023</span>
+                  <span
+                    class="experience-date"
+                    data-i18n="experience.intraveler.date"
+                    data-start-date="2023-07-01"
+                    data-end-date="2023-10-01"
+                    >Jul 2023 - Oct 2023</span
+                  >
                 </div>
-                <p class="experience-role">Full-stack Developer</p>
-                <p class="experience-tech">
-                  <strong>Tech:</strong> Strapi, Gatsby, React, Stripe, Prisma
+                <p class="experience-role" data-i18n="experience.role">
+                  Full-stack Developer
                 </p>
-                <p class="box-text">
+                <p class="experience-tech">
+                  <strong data-i18n="experience.tech">Tech:</strong> Strapi,
+                  Gatsby, React, Stripe, Prisma
+                </p>
+                <p
+                  class="box-text"
+                  data-i18n="experience.intraveler.description"
+                >
                   International travel and volunteer platform for young people.
                   Helps users find, book and manage trips that combine
                   adventure, cultural exchange and work on social and
                   environmental projects.
                 </p>
                 <ul class="experience-list">
-                  <li>Communication with customers and development team</li>
-                  <li>
+                  <li data-i18n="experience.intraveler.items.0">
+                    Communication with customers and development team
+                  </li>
+                  <li data-i18n="experience.intraveler.items.1">
                     Developed and maintained multiple admin panels for content,
                     users, and bookings management
                   </li>
-                  <li>
+                  <li data-i18n="experience.intraveler.items.2">
                     Integrated Stripe payment system for online transactions
                   </li>
-                  <li>
+                  <li data-i18n="experience.intraveler.items.3">
                     Designed and implemented RESTful API for stable data
                     exchange
                   </li>
@@ -131,30 +232,45 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       class="project-link"
+                      data-i18n="experience.remoteworx.name"
                       >RemoteWorx</a
                     >
                   </h3>
-                  <span class="experience-date">Oct 2022 - May 2023</span>
+                  <span
+                    class="experience-date"
+                    data-i18n="experience.remoteworx.date"
+                    data-start-date="2022-10-01"
+                    data-end-date="2023-05-01"
+                    >Oct 2022 - May 2023</span
+                  >
                 </div>
-                <p class="experience-role">Front-end Developer</p>
-                <p class="experience-tech">
-                  <strong>Tech:</strong> React, MUI, Redux
+                <p class="experience-role" data-i18n="experience.roleFrontend">
+                  Front-end Developer
                 </p>
-                <p class="box-text">
+                <p class="experience-tech">
+                  <strong data-i18n="experience.tech">Tech:</strong> React, MUI,
+                  Redux
+                </p>
+                <p
+                  class="box-text"
+                  data-i18n="experience.remoteworx.description"
+                >
                   Remote work platform designed to support employee well-being.
                   Promotes healthy habits like proper nutrition and exercise,
                   featuring a gamified module to help users enhance their remote
                   workspace.
                 </p>
                 <ul class="experience-list">
-                  <li>Created and implemented user interface components</li>
-                  <li>
+                  <li data-i18n="experience.remoteworx.items.0">
+                    Created and implemented user interface components
+                  </li>
+                  <li data-i18n="experience.remoteworx.items.1">
                     Collaborated closely with designers and back-end developers
                   </li>
-                  <li>
+                  <li data-i18n="experience.remoteworx.items.2">
                     Developed adaptive game to attract employees to the site
                   </li>
-                  <li>
+                  <li data-i18n="experience.remoteworx.items.3">
                     Built in-game store and refined game mechanics to increase
                     engagement
                   </li>
@@ -169,80 +285,85 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       class="project-link"
+                      data-i18n="experience.cwhub.name"
                       >CW Hub</a
                     >
                   </h3>
-                  <span class="experience-date">Jun 2022 - Dec 2023</span>
+                  <span
+                    class="experience-date"
+                    data-i18n="experience.cwhub.date"
+                    data-start-date="2022-06-01"
+                    data-end-date="2023-12-01"
+                    >Jun 2022 - Dec 2023</span
+                  >
                 </div>
-                <p class="experience-role">Full-stack Developer</p>
-                <p class="experience-tech">
-                  <strong>Tech:</strong> React, NestJS, TypeORM, Material UI
+                <p class="experience-role" data-i18n="experience.role">
+                  Full-stack Developer
                 </p>
-                <p class="box-text">
+                <p class="experience-tech">
+                  <strong data-i18n="experience.tech">Tech:</strong> React,
+                  NestJS, TypeORM, Material UI
+                </p>
+                <p class="box-text" data-i18n="experience.cwhub.description">
                   Full-stack web application for managing employees' working
                   hours, weekends, public holidays, and vacations, including a
                   calendar interface and leave request system.
                 </p>
                 <ul class="experience-list">
-                  <li>Full-stack development (front-end & back-end)</li>
-                  <li>
+                  <li data-i18n="experience.cwhub.items.0">
+                    Full-stack development (front-end & back-end)
+                  </li>
+                  <li data-i18n="experience.cwhub.items.1">
                     Implemented calendar for tracking working days, weekends,
                     and holidays
                   </li>
-                  <li>
+                  <li data-i18n="experience.cwhub.items.2">
                     Built functionality for vacation planning, requests, and
                     approvals
                   </li>
-                  <li>Developed logic for time tracking and reporting</li>
+                  <li data-i18n="experience.cwhub.items.3">
+                    Developed logic for time tracking and reporting
+                  </li>
                 </ul>
               </div>
 
               <div class="experience-item">
                 <div class="experience-header">
-                  <h3 class="experience-job">Intern Project</h3>
-                  <span class="experience-date">Mar 2022 - Jun 2023</span>
+                  <h3 class="experience-job" data-i18n="experience.intern.name">
+                    Intern Project
+                  </h3>
+                  <span
+                    class="experience-date"
+                    data-i18n="experience.intern.date"
+                    data-start-date="2022-03-01"
+                    data-end-date="2023-06-01"
+                    >Mar 2022 - Jun 2023</span
+                  >
                 </div>
-                <p class="experience-role">Full-stack Developer</p>
-                <p class="experience-tech">
-                  <strong>Tech:</strong> React, Express, Sequelize, JWT,
-                  PostgreSQL, React Hook Form
+                <p class="experience-role" data-i18n="experience.role">
+                  Full-stack Developer
                 </p>
-                <p class="box-text">
+                <p class="experience-tech">
+                  <strong data-i18n="experience.tech">Tech:</strong> React,
+                  Express, Sequelize, JWT, PostgreSQL, React Hook Form
+                </p>
+                <p class="box-text" data-i18n="experience.intern.description">
                   Web application that allowed users to request watch repair
                   services by booking available masters, taking into account
                   their workload and schedules.
                 </p>
                 <ul class="experience-list">
-                  <li>Developed web application from scratch</li>
-                  <li>
+                  <li data-i18n="experience.intern.items.0">
+                    Developed web application from scratch
+                  </li>
+                  <li data-i18n="experience.intern.items.1">
                     Ensured correct functionality and responsive UI across
                     devices
                   </li>
-                  <li>
+                  <li data-i18n="experience.intern.items.2">
                     Set up build and deployment process and published the site
                   </li>
                 </ul>
-              </div>
-            </div>
-
-            <!-- Education -->
-            <div class="content-box">
-              <h2 class="box-title">EDUCATION</h2>
-              <div class="education-item">
-                <h3 class="education-degree">
-                  Specialist Degree in Civil Engineering
-                </h3>
-                <p class="education-school">
-                  Prydniprovska State Academy of Civil Engineering and
-                  Architecture
-                </p>
-                <p class="education-location">Dnipro, Ukraine | 2009 – 2014</p>
-                <p class="education-details">
-                  Specialized in Civil Engineering with focus on structural
-                  design, construction management, and architectural planning.
-                  Completed comprehensive coursework in engineering principles,
-                  mathematics, and project management.
-                </p>
               </div>
             </div>
           </div>
@@ -251,10 +372,14 @@
           <div class="content-column right-column">
             <!-- Technical Skills -->
             <div class="content-box">
-              <h2 class="box-title box-title-accent">TECHNICAL SKILLS</h2>
+              <h2 class="box-title" data-i18n="skills.technical.title">
+                TECHNICAL SKILLS
+              </h2>
               <div class="skills-rating">
                 <div class="skill-rating-item">
-                  <span class="skill-name">FRONT-END</span>
+                  <span class="skill-name" data-i18n="skills.technical.frontend"
+                    >FRONT-END</span
+                  >
                   <div class="rating-dots">
                     <span class="dot filled"></span>
                     <span class="dot filled"></span>
@@ -269,7 +394,9 @@
                   </div>
                 </div>
                 <div class="skill-rating-item">
-                  <span class="skill-name">BACK-END</span>
+                  <span class="skill-name" data-i18n="skills.technical.backend"
+                    >BACK-END</span
+                  >
                   <div class="rating-dots">
                     <span class="dot filled"></span>
                     <span class="dot filled"></span>
@@ -284,7 +411,11 @@
                   </div>
                 </div>
                 <div class="skill-rating-item">
-                  <span class="skill-name">DATABASES</span>
+                  <span
+                    class="skill-name"
+                    data-i18n="skills.technical.databases"
+                    >DATABASES</span
+                  >
                   <div class="rating-dots">
                     <span class="dot filled"></span>
                     <span class="dot filled"></span>
@@ -299,7 +430,9 @@
                   </div>
                 </div>
                 <div class="skill-rating-item">
-                  <span class="skill-name">DEVOPS</span>
+                  <span class="skill-name" data-i18n="skills.technical.devops"
+                    >DEVOPS</span
+                  >
                   <div class="rating-dots">
                     <span class="dot filled"></span>
                     <span class="dot filled"></span>
@@ -316,48 +449,318 @@
               </div>
             </div>
 
-            <!-- Technologies -->
+            <!-- Education -->
             <div class="content-box">
-              <h2 class="box-title">TECHNOLOGIES</h2>
-              <ul class="skills-list">
-                <li>
-                  <strong>Front-end:</strong> React, React Router, Redux
-                  Toolkit, Material UI, Styled Components, Tailwind CSS, Formik,
-                  React Hook Form, HTML5, CSS3
-                </li>
-                <li>
-                  <strong>Back-end:</strong> Node.js, NestJS, Express.js,
-                  GraphQL (Apollo), REST API
-                </li>
-                <li><strong>ORM:</strong> Sequelize, Prisma, TypeORM</li>
-                <li>
-                  <strong>Databases:</strong> PostgreSQL, MySQL, MongoDB, Redis,
-                  S3
-                </li>
-                <li>
-                  <strong>Tools:</strong> Git, GitHub, Docker, GitHub Actions,
-                  CI/CD, Postman, Swagger, Webpack
-                </li>
-                <li>
-                  <strong>Languages:</strong> TypeScript, JavaScript (ES6+)
-                </li>
-                <li>
-                  <strong>Auth & Payments:</strong> JWT, OAuth, Stripe, PayPal
-                </li>
-              </ul>
+              <h2 class="box-title" data-i18n="education.title">EDUCATION</h2>
+              <div class="education-item">
+                <h3 class="education-degree" data-i18n="education.degree">
+                  Specialist Degree in Civil Engineering
+                </h3>
+                <p class="education-school" data-i18n="education.school">
+                  Prydniprovska State Academy of Civil Engineering and
+                  Architecture
+                </p>
+                <p class="education-location" data-i18n="education.location">
+                  Dnipro, Ukraine | 2009 – 2014
+                </p>
+                <p class="education-details" data-i18n="education.details">
+                  Specialized in Civil Engineering with focus on structural
+                  design, construction management, and architectural planning.
+                  Completed comprehensive coursework in engineering principles,
+                  mathematics, and project management.
+                </p>
+              </div>
             </div>
 
             <!-- Languages -->
             <div class="content-box">
-              <h2 class="box-title">LANGUAGES</h2>
+              <h2 class="box-title" data-i18n="languages.title">LANGUAGES</h2>
               <div class="languages-list">
                 <div class="language-item">
-                  <span class="language-name">English</span>
-                  <span class="language-level">A2-B1</span>
+                  <span class="language-name" data-i18n="languages.english"
+                    >English</span
+                  >
+                  <span class="language-level" data-i18n="languages.level.a2b1"
+                    >A2-B1</span
+                  >
                 </div>
                 <div class="language-item">
-                  <span class="language-name">Ukrainian</span>
-                  <span class="language-level">Native</span>
+                  <span class="language-name" data-i18n="languages.ukrainian"
+                    >Ukrainian</span
+                  >
+                  <span
+                    class="language-level"
+                    data-i18n="languages.level.native"
+                    >Native</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Technologies -->
+            <div class="content-box">
+              <h2 class="box-title" data-i18n="skills.technologies.title">
+                TECHNOLOGIES
+              </h2>
+              <ul class="skills-list">
+                <li>
+                  <strong data-i18n="skills.technologies.frontend"
+                    >Front-end:</strong
+                  >
+                  <span data-i18n="skills.technologies.frontendList"
+                    >React, React Router, Redux Toolkit, Material UI, Styled
+                    Components, Tailwind CSS, Formik, React Hook Form, HTML5,
+                    CSS3</span
+                  >
+                </li>
+                <li>
+                  <strong data-i18n="skills.technologies.backend"
+                    >Back-end:</strong
+                  >
+                  <span data-i18n="skills.technologies.backendList"
+                    >Node.js, NestJS, Express.js, GraphQL (Apollo), REST
+                    API</span
+                  >
+                </li>
+                <li>
+                  <strong data-i18n="skills.technologies.orm">ORM:</strong>
+                  <span data-i18n="skills.technologies.ormList"
+                    >Sequelize, Prisma, TypeORM</span
+                  >
+                </li>
+                <li>
+                  <strong data-i18n="skills.technologies.databases"
+                    >Databases:</strong
+                  >
+                  <span data-i18n="skills.technologies.databasesList"
+                    >PostgreSQL, MySQL, MongoDB, Redis, S3</span
+                  >
+                </li>
+                <li>
+                  <strong data-i18n="skills.technologies.tools">Tools:</strong>
+                  <span data-i18n="skills.technologies.toolsList"
+                    >Git, GitHub, Docker, GitHub Actions, CI/CD, Postman,
+                    Swagger, Webpack</span
+                  >
+                </li>
+                <li>
+                  <strong data-i18n="skills.technologies.languages"
+                    >Languages:</strong
+                  >
+                  <span data-i18n="skills.technologies.languagesList"
+                    >TypeScript, JavaScript (ES6+)</span
+                  >
+                </li>
+                <li>
+                  <strong data-i18n="skills.technologies.auth"
+                    >Auth & Payments:</strong
+                  >
+                  <span data-i18n="skills.technologies.authList"
+                    >JWT, OAuth, Stripe, PayPal</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Work Experience (Collapsible) -->
+            <div class="content-box accordion-box">
+              <button class="accordion-header">
+                <h2 class="box-title" data-i18n="workExperience.title">
+                  ОПЫТ РАБОТЫ
+                </h2>
+                <span class="accordion-icon">▼</span>
+              </button>
+              <div class="accordion-content">
+                <div class="work-experience-item">
+                  <div class="work-experience-header">
+                    <div class="work-experience-title-wrapper">
+                      <h3
+                        class="work-experience-title"
+                        data-i18n="workExperience.job0.title"
+                      >
+                        Full-stack Developer
+                      </h3>
+                      <a
+                        href="https://clockwise.software/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="work-experience-company"
+                        data-i18n="workExperience.job0.company"
+                        >Clockwise Software</a
+                      >
+                    </div>
+                    <span
+                      class="work-experience-date experience-date"
+                      data-i18n="workExperience.job0.date"
+                      data-start-date="2022-03-01"
+                      data-end-date="present"
+                      >Mar 2022 - Present</span
+                    >
+                  </div>
+                </div>
+
+                <div class="work-experience-item">
+                  <div class="work-experience-header">
+                    <div class="work-experience-title-wrapper">
+                      <h3
+                        class="work-experience-title"
+                        data-i18n="workExperience.job1.title"
+                      >
+                        Инженер
+                      </h3>
+                      <a
+                        href="https://pkbpsk.com.ua/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="work-experience-company"
+                        data-i18n="workExperience.job1.company"
+                        >Пкб пск</a
+                      >
+                    </div>
+                    <span
+                      class="work-experience-date experience-date"
+                      data-i18n="workExperience.job1.date"
+                      data-start-date="2020-01-01"
+                      data-end-date="2022-03-01"
+                      >2020 - Mar 2022</span
+                    >
+                  </div>
+                </div>
+
+                <div class="work-experience-item">
+                  <div class="work-experience-header">
+                    <div class="work-experience-title-wrapper">
+                      <h3
+                        class="work-experience-title"
+                        data-i18n="workExperience.job2.title"
+                      >
+                        Специалист
+                      </h3>
+                      <a
+                        href="https://adm.dp.gov.ua/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="work-experience-company"
+                        data-i18n="workExperience.job2.company"
+                        >Департамент капитального строительства ДОГА</a
+                      >
+                    </div>
+                    <span
+                      class="work-experience-date experience-date"
+                      data-i18n="workExperience.job2.date"
+                      data-start-date="2017-01-01"
+                      data-end-date="2020-01-01"
+                      >2017 - 2020</span
+                    >
+                  </div>
+                </div>
+
+                <div class="work-experience-item">
+                  <div class="work-experience-header">
+                    <div class="work-experience-title-wrapper">
+                      <h3
+                        class="work-experience-title"
+                        data-i18n="workExperience.job3.title"
+                      >
+                        Инженер отдела пто
+                      </h3>
+                      <a
+                        href="https://lun.ua/ru/%D1%81%D0%BE%D0%B7%D0%B8%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8C?srsltid=AfmBOorqB_d1CpJLYrnaTsOTQTq87WM7sV545FxLapiXkzNWxD8qGSDP"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="work-experience-company"
+                        data-i18n="workExperience.job3.company"
+                        >строительная фирма Созидатель</a
+                      >
+                    </div>
+                    <span
+                      class="work-experience-date experience-date"
+                      data-i18n="workExperience.job3.date"
+                      data-start-date="2015-01-01"
+                      data-end-date="2016-01-01"
+                      >2015 - 2016</span
+                    >
+                  </div>
+                </div>
+
+                <div class="work-experience-item">
+                  <div class="work-experience-header">
+                    <div class="work-experience-title-wrapper">
+                      <h3
+                        class="work-experience-title"
+                        data-i18n="workExperience.job4.title"
+                      >
+                        Инженер-проектировщик
+                      </h3>
+                      <a
+                        href="https://76069-ua.all.biz/uk/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="work-experience-company"
+                        data-i18n="workExperience.job4.company"
+                        >Укреврокровля</a
+                      >
+                    </div>
+                    <span
+                      class="work-experience-date experience-date"
+                      data-i18n="workExperience.job4.date"
+                      data-start-date="2013-01-01"
+                      data-end-date="2015-01-01"
+                      >2013 - 2015</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contacts -->
+            <div class="content-box">
+              <h2 class="box-title" data-i18n="contacts.title">CONTACTS</h2>
+              <div class="contacts-list">
+                <div class="contact-item">
+                  <span class="contact-label" data-i18n="contacts.phone"
+                    >Phone:</span
+                  >
+                  <a href="tel:+380980098228" class="contact-link"
+                    >098 00 98 228</a
+                  >
+                </div>
+                <div class="contact-item">
+                  <span class="contact-label" data-i18n="contacts.email"
+                    >Email:</span
+                  >
+                  <a
+                    href="mailto:19mip92@gmail.com"
+                    class="contact-link"
+                    data-i18n="footer.email"
+                    >19mip92@gmail.com</a
+                  >
+                </div>
+                <div class="contact-item">
+                  <span class="contact-label" data-i18n="contacts.github"
+                    >GitHub:</span
+                  >
+                  <a
+                    href="https://github.com/mip92"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-link"
+                    data-i18n="footer.github"
+                    >GitHub: @mip92</a
+                  >
+                </div>
+                <div class="contact-item">
+                  <span class="contact-label" data-i18n="contacts.linkedin"
+                    >LinkedIn:</span
+                  >
+                  <a
+                    href="https://www.linkedin.com/in/%D0%B0%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80-%D0%B1%D0%BE%D0%B9%D1%87%D0%B5%D0%BD%D0%BA%D0%BE-b0670b209/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-link"
+                    data-i18n="footer.linkedin"
+                    >LinkedIn</a
+                  >
                 </div>
               </div>
             </div>
@@ -370,7 +773,10 @@
     <footer class="site-footer">
       <div class="footer-container">
         <div class="footer-left">
-          <a href="mailto:19mip92@gmail.com" class="footer-email"
+          <a
+            href="mailto:19mip92@gmail.com"
+            class="footer-email"
+            data-i18n="footer.email"
             >19mip92@gmail.com</a
           >
         </div>
@@ -380,6 +786,7 @@
             target="_blank"
             rel="noopener noreferrer"
             class="footer-link"
+            data-i18n="footer.github"
             >GitHub: @mip92</a
           >
           <span class="footer-separator">|</span>
@@ -388,6 +795,7 @@
             target="_blank"
             rel="noopener noreferrer"
             class="footer-link"
+            data-i18n="footer.linkedin"
             >LinkedIn</a
           >
         </div>
